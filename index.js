@@ -79,7 +79,15 @@ function play(question,optionArr,answer)
     console.log('the correct answer is, ' + chalk.green.underline.bold(answer))
   }
   console.log(chalk.cyanBright('your current score is: ' + chalk.bold(userScore)))
+  console.log(chalk.yellow('******************************************************************'))
 
+}
+
+var quizArr = [quizOne, quizTwo, quizThree, quizFour, quizFive, quizSix, quizSeven, quizEight, quizNine, quizTen]
+
+for (var i = 0; i<quizArr.length; i++) 
+{
+  play(quizArr[i].question,quizArr[i].option,quizArr[i].answer)
 }
 
 
