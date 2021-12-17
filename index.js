@@ -89,11 +89,30 @@ for (var i = 0; i<quizArr.length; i++)
 {
   play(quizArr[i].question,quizArr[i].option,quizArr[i].answer)
 }
+console.log(chalk.magentaBright.underline('your final score is ' + chalk.bold(userScore)))
 
 
+var highestScorer = 
+{
+  name:'mayank' ,
+  score: 10
+}
 
-
-
+var newPlayer =
+{
+  name: userName,
+  score: userScore
+}
+if (newPlayer.score >= highestScorer.score) 
+{
+  console.log(chalk.greenBright('congratulations, ' + userName + ' for the new high score.'))
+  console.log(chalk.yellow('please, send the screenshot of your score at my twitter handle @MayankkSachdev'))
+}
+else 
+{
+  console.log(chalk.whiteBright.bgBlackBright('highest score is ' + highestScorer.score))
+  console.log(chalk.cyanBright('better luck next time!'))
+}
 
 
 
