@@ -62,6 +62,8 @@ var quizTen = {
   answer: 'rodents'
 }
 
+var userScore = 0;
+
 function play(question,optionArr,answer) 
 {
   var index = readlineSync.keyInSelect(optionArr, chalk.black.bgWhite(question))
@@ -69,14 +71,17 @@ function play(question,optionArr,answer)
   if (userAnswer === answer ) 
   {
     console.log(chalk.greenBright('you are correct!'))
+    userScore = userScore + 1;
   }
    else 
   {
     console.log(chalk.red('you are wrong!'))
     console.log('the correct answer is, ' + chalk.green.underline.bold(answer))
   }
+  console.log(chalk.cyanBright('your current score is: ' + chalk.bold(userScore)))
 
 }
+
 
 
 
