@@ -11,5 +11,58 @@ console.log('_________________________________________________________________')
 console.log(chalk.magenta.bgRedBright("let's playy!"))
 
 
+var quizOne = {
+  question: 'What does my name mean?',
+  option: ['star','peacock','moon','river'],
+  answer: 'moon'
+}
+var quizTwo = {
+  question: 'What is my favorite food?',
+  option: ['noodles','pizza','pani-puri','pav bhaji'],
+  answer: 'noodles'
+}
+var quizThree = {
+  question: 'What is my favorite series?',
+  option: ['star wars','one piece','FRIENDS','squid game'],
+  answer: 'one piece'
+}
+var quizFour = {
+  question: 'What did I like to do as a child?',
+  option: ['singing','cycling','drawing','dancing'],
+  answer: 'dancing'
+}
+var quizFive = {
+  question: 'What is my zodiac sign?',
+  option: ['aquarius','sagittarius','pisces','capricorn'],
+  answer: 'aquarius'
+}
+var quizSix = {
+  question: 'What is my favorite flavor of ice cream?',
+  option: ['vanilla','strawberry','chocochip','black-current'],
+  answer: 'chocochip'
+}
+var quizSeven= {
+  question: 'Which languages do I speak?',
+  option: ['hindi','english','sindhi','all'],
+  answer: 'all'
+}
+var quizEight = {
+  question: 'Do I like waking up early or staying up late?',
+  option: ['early riser','night owl'],
+  answer: 'night owl'
+}
+var quizNine = {
+  question: 'What is my favorite k-drama?',
+  option: ['signal','its okay, not to be okay','My Mister','itaewon classes'],
+  answer: 'My Mister'
+}
+var quizTen = {
+  question: 'What is my deepest fear?',
+  option: ['fire','height','rodents','darkness'],
+  answer: 'rodents'
+}
+
+
+
 
 
