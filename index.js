@@ -6,7 +6,7 @@ console.log(chalk.blue('Please, read the instructions carefully!'))
 console.log(chalk.yellowBright('1. ' + 'this quiz comprises of 10 questions. '))
 console.log(chalk.yellowBright('2. ' + 'you will be rewarded 1 point for every correct answer. '))
 console.log(chalk.yellowBright('3. ' + 'there is no deduction for wrong answer.'))
-console.log(chalk.yellow('4. ' + chalk.bgWhite('You only need to enter the option number for responding!')))
+console.log(chalk.yellowBright('4. ' + chalk.underline('You only need to enter the option number for responding!')))
 console.log('_________________________________________________________________')
 console.log(chalk.magenta.bgRedBright("let's playy!"))
 
@@ -61,6 +61,38 @@ var quizTen = {
   option: ['fire','height','rodents','darkness'],
   answer: 'rodents'
 }
+
+function play(question,optionArr,answer) 
+{
+  var index = readlineSync.keyInSelect(optionArr, chalk.black.bgWhite(question))
+  var userAnswer = optionArr[index];
+  if (userAnswer === answer ) 
+  {
+    console.log(chalk.greenBright('you are correct!'))
+  }
+   else 
+  {
+    console.log(chalk.red('you are wrong!'))
+    console.log('the correct answer is, ' + chalk.green.underline.bold(answer))
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
